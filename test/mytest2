@@ -1,0 +1,19 @@
+/* ex2: Class */
+program ex2;
+class rect
+{
+	declarations
+		int width=3, length=7;
+	enddeclarations
+}
+
+class mc
+{
+	declarations
+		int len = 5;
+	enddeclarations
+	method void main()
+	{
+
+	}
+}

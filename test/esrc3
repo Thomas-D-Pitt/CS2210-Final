@@ -1,0 +1,18 @@
+/* ex3: if-else, while */
+program ex3;
+class c3
+{
+	method void main()
+	declarations
+		int x;
+	enddeclarations
+	{
+	while (x <= 10)
+		{
+		x := x + 1;
+		System.println(x);
+		};
+	
+	}
+}
+
