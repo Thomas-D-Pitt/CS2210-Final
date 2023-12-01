@@ -1,15 +1,17 @@
 tested on ubuntu
 
-## Install
-sudo apt-get install gcc-multilib libc6-dev-i386
-
 
 ## Generating code
 `
-make semantic
+make codeGen
+`
+
+## generating code
+`
+./myCodeGen < test/src1
 `
 
 ## testing code
 `
-./seman < test/src1
+./spim.linux -file mycode.s
 `
