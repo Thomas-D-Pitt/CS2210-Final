@@ -1,0 +1,22 @@
+/* ex2: Class */
+program ex2;
+class rect
+{
+	declarations
+		int width=3, length=7;
+	enddeclarations
+	method int getArea()
+	{
+	return (width*length); 
+	}
+}
+
+class mc
+{
+	method void main()
+
+	{
+	rect.width := 4;
+	System.println(rect.getArea());
+	}
+}

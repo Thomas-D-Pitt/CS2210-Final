@@ -49,10 +49,10 @@ class Point2 {
 			Point1 px;
 	     enddeclarations
 	{
-	   Point0.f0();
-           p21.f1(); 
+	   Point0.f0(); /* no beqz */
+           p21.f1(); /* beqz */
 	   px.p1.x := xx;
-	   px.p1.f0(); 
+	   px.p1.f0();  /* no beqz */
 	   p21.t1 := 133;
 	   p21.f1();
 	   system.println('p21.p1.x=');

@@ -49,27 +49,8 @@ class Point2 {
 			Point1 px;
 	     enddeclarations
 	{
-	   Point0.f0();
-           p21.f1(); 
 	   px.p1.x := xx;
-	   px.p1.f0(); 
-	   p21.t1 := 133;
-	   p21.f1();
-	   system.println('p21.p1.x=');
-	   system.println(p21.p1.x);
-	   p20.f0();
-	   xy := 0;
-	   while (xy <12)
-	   {
-		system.println('p20.parr0:');
-		system.println(p20.parr0[xy]);
-		xy := xy+1;
-	   };
-	   Point1.f1();
-	   system.println('p20.x=');
-	   system.println(p20.x); 
+	   px.p1.f0();  /* no beqz */
         }
 }
-
-
 

@@ -1,0 +1,12 @@
+/* simple starter test */
+program mytest;
+class c1
+{
+	method void main()
+	declarations
+		int x=4;
+	enddeclarations
+	{
+		system.println('hellow');
+    }
+}

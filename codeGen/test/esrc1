@@ -1,0 +1,17 @@
+/* Ex1: Assignment statement */
+program ex1;
+class c1
+{
+	method void main()
+	declarations
+		int x=4;
+	enddeclarations
+	{
+
+		if (x>=1){
+			x:=14;
+		};
+		System.println(x);
+		System.println('abc');
+	}
+}

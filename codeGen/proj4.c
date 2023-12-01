@@ -293,7 +293,8 @@ void codeGen(tree node, int tabs){
 
         case BoundOp:{
             if (inMethod){
-                for (int i = 0; i < node->RightC->IntVal; i++){
+                int i;
+                for (i = 0; i < node->RightC->IntVal; i++){
                     emit("sw\t$0\t0($sp)\t\t#store $0 to stack top", tabs);
                     emit("addi\t$sp\t$sp\t-4\t#increase st", tabs);
                     stackPushCount++;
@@ -302,7 +303,8 @@ void codeGen(tree node, int tabs){
             }   
             else{
                 emit(".data", tabs);
-                for (int i = 0; i < node->RightC->IntVal; i++){
+                int i;
+                for (i = 0; i < node->RightC->IntVal; i++){
                     emit(".word 0", tabs);
                     dataStackOffset += 4;
 
@@ -889,7 +891,8 @@ void emit_call(char* func_name, tree node, int tabs){
 	emit("addi\t$sp\t$sp\t-4\t#push st", tabs);
     stackPushCount++;
 
-    for (int i = 8; i <= 25; i++){
+    int i;
+    for (i = 8; i <= 25; i++){
         sprintf(emitVal, "sw\t$%d\t0($sp)\t\t#save $%d", i, i);
         emit(emitVal, tabs);
         emit("addi\t$sp\t$sp\t-4\t#push st", tabs);
@@ -925,7 +928,7 @@ void emit_call(char* func_name, tree node, int tabs){
     emit(emitVal, tabs);
     sprintf(emitVal, "add\t$sp\t%d\t\t#pop %d arguments", num_arg*4, num_arg);
     emit(emitVal, tabs);
-    for (int i = 25; i >= 8; i--){
+    for (i = 25; i >= 8; i--){
         sprintf(emitVal, "lw\t$%d\t4($sp)\t\t#restore register %d", i, i);
         emit(emitVal, tabs);
         emit("addi\t$sp\t$sp\t4\t#pop st", tabs);
@@ -1006,7 +1009,8 @@ void emit(char *instruction, int tabs){
     }
 
     // Write text to the file
-    for (int i = 0; i < tabs; i++){
+    int i;
+    for (i = 0; i < tabs; i++){
         printf("\t");
         fprintf(file, "\t");
     }
