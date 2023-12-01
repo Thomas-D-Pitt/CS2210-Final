@@ -5,6 +5,10 @@ tested on ubuntu
 `
 make codeGen
 `
+or (on 64-bit system)
+`
+make codeGen64
+`
 
 ## generating code
 `
