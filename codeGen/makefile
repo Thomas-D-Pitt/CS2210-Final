@@ -12,4 +12,4 @@ codeGen:  y.tab.c lex.yy.c table.c seman.c proj3.c
 	gcc y.tab.c proj2.c proj3.c proj4.c seman.c -o myCodeGen -w -g
 
 clean:
-	rm -f lex.yy.c y.tab.* *.o myCodeGen parser
+	rm -f y.tab.* *.o myCodeGen parser
