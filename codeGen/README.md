@@ -15,8 +15,15 @@ make codeGen64
 ./myCodeGen < test/src1
 `
 
+## generate reference code
+`
+chmod +x codeGen.linux
+./codeGen.linux < test/src1
+`
+
 ## testing code
 `
+chmod +x spim.linux
 ./spim.linux -file mycode.s
 `
 
