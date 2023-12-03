@@ -1,4 +1,4 @@
-tested on ubuntu
+tested on nickel.cs.pitt.edu
 
 
 ## Generating code
